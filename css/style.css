@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+header h1{
+    font-family: var(--fonte2);
+    font-variant: small-caps; /*Todas as letras maiúsculas, mas as iniciais tem tamanho maior*/
+    font-size: 8vh; /*É um jeito meio gambiarra de fazer uma responsividade, então o mais recomendado ainda seria fazer um media query por exemplo*/
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding: 10vh 0 10vh 30px; /*em cima e em baixo com padding de 10% da view height*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+    line-height: 2em;
+}
+section p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: white;
+}
+section.imagem{   
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Dá um efeito parallax na imagem (quando da scroll a imagem não mexe junto)*/
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.322);
+}
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.171);
+    display: inline-block;
+    padding: 10px 10px 10px 2px;
+    text-shadow: 1px 1px 0px black;
+}
+section.imagem#img1{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+section.imagem#img2{
+    background-image: url(../imagens/background002.jpg);
+}
+footer{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

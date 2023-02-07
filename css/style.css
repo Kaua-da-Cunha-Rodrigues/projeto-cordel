@@ -23,7 +23,7 @@ header{
 header h1{
     font-family: var(--fonte2);
     font-variant: small-caps; /*Todas as letras maiúsculas, mas as iniciais tem tamanho maior*/
-    font-size: 8vh; /*É um jeito meio gambiarra de fazer uma responsividade, então o mais recomendado ainda seria fazer um media query por exemplo*/
+    font-size: 8vw; /*É um jeito meio gambiarra de fazer uma responsividade, então o mais recomendado ainda seria fazer um media query por exemplo*/
 }
 a{
     color: white;
